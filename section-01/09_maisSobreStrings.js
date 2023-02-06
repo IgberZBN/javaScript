@@ -15,3 +15,24 @@ console.log(stringTest.lastIndexOf('hello')); //* output = 0 // ele começa de t
 //* Expressão regulares
 console.log(stringTest.match(/[a-z]/g));
 console.log(stringTest.replace('hello', 'hi')); // * troca a palavra "hello" por "hi"
+
+// ? Exercicio
+
+const nome = prompt('Digite seu nome');
+document.body.innerHTML += /*HTML*/ `<p>Seu nome é: ${nome} </p>`;
+document.body.innerHTML += /*HTML*/ `<p>Seu nome tem ${nome.length} letras </p>`;
+document.body.innerHTML += /*HTML*/ `<p>A segunda letra do seu nome é: ${nome[1]} </p>`;
+document.body.innerHTML += /*HTML*/ `<p>Qual o primeiro indice da letra "a" no seu nome? ${
+  nome.indexOf('a') + 1
+} </p>`;
+document.body.innerHTML += /*HTML*/ `<p>Qual o ultimo indice da letra "a" no seu nome? ${
+  nome.lastIndexOf('a') + 1
+} </p>`;
+document.body.innerHTML += /*HTML*/ `<p>As ultimas 3 letras do seu nome são: ${nome.slice(
+  -3
+)}</p>`;
+document.body.innerHTML += /*HTML*/ `<p>As palavras do seu nome são: ${nome.split(
+  ' '
+)}</p>`;
+document.body.innerHTML += /*HTML*/ `<p>Seu nome em letras maisculas: ${nome.toUpperCase()}</p>`;
+document.body.innerHTML += /*HTML*/ `<p>Seu nome em letras minisculas: ${nome.toLowerCase()}</p>`;
